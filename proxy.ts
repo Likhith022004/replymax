@@ -2,7 +2,7 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   const res = NextResponse.next()
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -33,6 +33,8 @@ export async function middleware(req: NextRequest) {
 
   return res
 }
+
+export default proxy
 
 export const config = {
   matcher: ['/dashboard/:path*', '/campaigns/:path*', '/templates/:path*', '/login', '/signup']
