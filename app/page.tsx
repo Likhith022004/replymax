@@ -81,7 +81,7 @@ export default function LandingPage() {
             </div>
             <h3 className="text-sm font-semibold text-gray-900 mb-2">No system</h3>
             <p className="text-sm text-gray-500">
-              Writing emails one by one in Claude with no memory of what worked before.
+              Writing emails one by one in AI tools with no memory of what worked before.
             </p>
           </div>
         </div>
@@ -113,14 +113,14 @@ export default function LandingPage() {
       {/* Why not just use Claude */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-100">
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-4">
-          Why not just use Claude directly?
+          Why not just use AI tools directly?
         </h2>
         <p className="text-center text-gray-500 text-sm mb-10">
-          Claude writes one email. ReplyMax runs campaigns.
+          AI tools write one email. ReplyMax runs campaigns.
         </p>
         <div className="grid grid-cols-2 gap-6">
           <div className="border border-gray-200 rounded-xl p-6">
-            <p className="text-sm font-semibold text-gray-400 mb-4">Using Claude manually</p>
+            <p className="text-sm font-semibold text-gray-400 mb-4">Using AI tools manually</p>
             <ul className="space-y-3">
               {[
                 'One email at a time',
