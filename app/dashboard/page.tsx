@@ -70,7 +70,7 @@ export default function DashboardPage() {
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-4 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <div className="bg-white border border-gray-200 rounded-xl p-5 animate-fade-in stagger-1 card-hover">
           <p className="text-sm text-gray-500 mb-1">Current Plan</p>
           <p className="text-xl font-semibold text-gray-900 capitalize">{profile?.plan ?? 'free'}</p>

@@ -56,7 +56,7 @@ export default function LandingPage() {
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
           Why most cold emails fail
         </h2>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="text-center">
             <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center mx-auto mb-4">
               <span className="text-red-500 text-lg">✗</span>
@@ -92,7 +92,7 @@ export default function LandingPage() {
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
           How ReplyMax works
         </h2>
-        <div className="grid grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { step: '1', title: 'Create a campaign', desc: 'Name your campaign and describe your offer in plain English.' },
             { step: '2', title: 'Upload your leads', desc: 'Drop in a CSV with name, company, and website.' },
@@ -118,7 +118,7 @@ export default function LandingPage() {
         <p className="text-center text-gray-500 text-sm mb-10">
           AI tools write one email. ReplyMax runs campaigns.
         </p>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="border border-gray-200 rounded-xl p-6">
             <p className="text-sm font-semibold text-gray-400 mb-4">Using AI tools manually</p>
             <ul className="space-y-3">
@@ -162,7 +162,7 @@ export default function LandingPage() {
         <p className="text-gray-500 text-sm mb-8">
           Start free. Upgrade when you need more volume.
         </p>
-        <div className="grid grid-cols-3 gap-5 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
           {[
             { name: 'Starter', price: '$49', desc: '300 emails/month', sub: '1 campaign' },
             { name: 'Growth', price: '$149', desc: '1,500 emails/month', sub: 'Unlimited campaigns', highlight: true },

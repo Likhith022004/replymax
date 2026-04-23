@@ -80,7 +80,7 @@ export default function PricingPage() {
         <p className="text-gray-500 mt-2">Pay for what you use. Upgrade when you need more.</p>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
         {plans.map((plan) => {
           const isCurrent = currentPlan === plan.id
           return (
