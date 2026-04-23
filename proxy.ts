@@ -23,6 +23,11 @@ export async function proxy(req: NextRequest) {
   const isAuthPage = req.nextUrl.pathname.startsWith('/login') ||
                      req.nextUrl.pathname.startsWith('/signup')
 
+  const isPublicPage = req.nextUrl.pathname === '/' ||
+                       req.nextUrl.pathname.startsWith('/pricing')
+
+  if (isPublicPage) return res
+
   if (!session && !isAuthPage) {
     return NextResponse.redirect(new URL('/login', req.url))
   }
@@ -37,5 +42,13 @@ export async function proxy(req: NextRequest) {
 export default proxy
 
 export const config = {
-  matcher: ['/dashboard/:path*', '/campaigns/:path*', '/templates/:path*', '/login', '/signup']
+  matcher: [
+    '/',
+    '/dashboard/:path*',
+    '/campaigns/:path*',
+    '/templates/:path*',
+    '/login',
+    '/signup',
+    '/pricing'
+  ]
 }
