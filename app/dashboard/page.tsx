@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { createClient } from '@/lib/supabase-client'
 import { PLANS } from '@/lib/plans'
 import UsageBar from '@/components/usage-bar'
+import { DashboardSkeleton } from '@/components/skeleton'
 
 export default function DashboardPage() {
   const supabase = createClient()
@@ -37,7 +38,7 @@ export default function DashboardPage() {
     load()
   }, [])
 
-  if (loading) return <div className="text-gray-500 text-sm">Loading...</div>
+  if (loading) return <DashboardSkeleton />
 
   const plan = PLANS[profile?.plan as keyof typeof PLANS] ?? PLANS.free
   const usagePercent = Math.min((profile?.usage_count / plan.emails_per_month) * 100, 100)

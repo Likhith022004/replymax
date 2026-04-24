@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { createClient } from '@/lib/supabase-client'
 import { PLANS } from '@/lib/plans'
+import { ListSkeleton } from '@/components/skeleton'
 
 export default function CampaignsPage() {
   const supabase = createClient()
@@ -43,7 +44,7 @@ export default function CampaignsPage() {
     load()
   }, [])
 
-  if (loading) return <div className="text-gray-500 text-sm">Loading...</div>
+  if (loading) return <ListSkeleton />
 
   const plan = PLANS[profile?.plan as keyof typeof PLANS] ?? PLANS.free
   const isAtLimit = plan.max_campaigns !== Infinity && campaigns.length >= plan.max_campaigns

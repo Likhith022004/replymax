@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase-client'
+import { ListSkeleton } from '@/components/skeleton'
 
 export default function TemplatesPage() {
   const supabase = createClient()
@@ -80,7 +81,7 @@ export default function TemplatesPage() {
     setTimeout(() => setCopied(null), 2000)
   }
 
-  if (loading) return <div className="text-gray-500 text-sm">Loading...</div>
+  if (loading) return <ListSkeleton />
 
   return (
     <div className="animate-fade-in">
