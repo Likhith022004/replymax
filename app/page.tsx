@@ -26,7 +26,7 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-6">
-          Built for cold email agencies
+          SAAS Built for cold email agencies
         </div>
         <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
           Cold emails that actually<br />get replies
