@@ -28,9 +28,12 @@ export default function LandingPage() {
         <div className="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-6">
           SAAS Built for cold email agencies
         </div>
-        <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-6">
+        <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
           Cold emails that actually<br />get replies
         </h1>
+        <p className="text-base font-medium text-gray-700 mb-6">
+          System that consistently produces higher reply rates than anything else
+        </p>
         <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
           ReplyMax turns your lead list into personalized cold email campaigns in minutes — not hours. Built around a structured system, not generic AI writing.
         </p>
