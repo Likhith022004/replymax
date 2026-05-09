@@ -12,7 +12,7 @@
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">2. Description of Service</h2>
-          <p>ReplyMax is a SaaS platform that helps outbound sales agencies generate personalized cold email campaigns. Users can upload lead lists, generate AI-personalized emails, and manage campaign history.</p>
+          <p>ReplyMax is a SaaS platform that helps outbound sales agencies generate personalized sales outreach emails. Users can upload lead lists, generate AI-personalized emails, and manage campaign history.</p>
         </div>
 
         <div>

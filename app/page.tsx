@@ -26,16 +26,16 @@ export default function LandingPage() {
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
         <div className="inline-block bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full mb-6">
-          SAAS Built for cold email agencies
+          Built for B2B sales teams
         </div>
         <h1 className="text-5xl font-bold text-gray-900 leading-tight mb-4">
-          Cold emails that actually<br />get replies
+          Personalized email outreach<br />that gets responses
         </h1>
         <p className="text-base font-medium text-gray-700 mb-6">
           System that consistently produces higher reply rates than anything else
         </p>
         <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
-          ReplyMax turns your lead list into personalized cold email campaigns in minutes — not hours. Built around a structured system, not generic AI writing.
+          ReplyMax turns your lead list into personalized email outreach in minutes — not hours. Built around a structured system, not generic AI writing.
         </p>
         <div className="flex items-center justify-center gap-4">
           <Link
@@ -57,7 +57,7 @@ export default function LandingPage() {
       {/* Problem */}
       <section className="max-w-4xl mx-auto px-6 py-16 border-t border-gray-100">
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">
-          Why most cold emails fail
+          Why most sales emails get ignored
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <div className="text-center">
