@@ -18,11 +18,25 @@ export default function DashboardPage() {
       const { data: { user } } = await supabase.auth.getUser()
       if (!user) return
 
-      const { data: profileData } = await supabase
+      let { data: profileData } = await supabase
         .from('profiles')
         .select('*')
         .eq('id', user.id)
         .single()
+
+      if (!profileData) {
+        const { data: newProfile } = await supabase
+          .from('profiles')
+          .insert({
+            id: user.id,
+            email: user.email ?? '',
+            plan: 'free',
+            usage_count: 0
+          })
+          .select()
+          .single()
+        profileData = newProfile
+      }
 
       const { data: campaignData } = await supabase
         .from('campaigns')
