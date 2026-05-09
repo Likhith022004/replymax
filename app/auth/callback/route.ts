@@ -6,6 +6,7 @@ import type { NextRequest } from 'next/server'
 export async function GET(req: NextRequest) {
   const requestUrl = new URL(req.url)
   const code = requestUrl.searchParams.get('code')
+  const origin = requestUrl.origin
 
   if (code) {
     const cookieStore = await cookies()
@@ -40,13 +41,15 @@ export async function GET(req: NextRequest) {
           .from('profiles')
           .insert({
             id: user.id,
-            email: user.email,
+            email: user.email ?? '',
             plan: 'free',
             usage_count: 0
           })
       }
+
+      return NextResponse.redirect(`${origin}/dashboard`)
     }
   }
 
-  return NextResponse.redirect(new URL('/dashboard', requestUrl.origin))
+  return NextResponse.redirect(`${origin}/login`)
 }

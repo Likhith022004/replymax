@@ -33,7 +33,7 @@ export default function LoginPage() {
           supabaseClient={supabase}
           appearance={{ theme: ThemeSupa }}
           providers={['google']}
-          redirectTo={`${process.env.NEXT_PUBLIC_SITE_URL}/auth/callback`}
+          redirectTo="https://replymax-vd41.vercel.app/auth/callback"
         />
       </div>
     </div>
