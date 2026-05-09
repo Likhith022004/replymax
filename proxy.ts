@@ -24,7 +24,10 @@ export async function proxy(req: NextRequest) {
                      req.nextUrl.pathname.startsWith('/signup')
 
   const isPublicPage = req.nextUrl.pathname === '/' ||
-                       req.nextUrl.pathname.startsWith('/pricing')
+                       req.nextUrl.pathname.startsWith('/pricing') ||
+                       req.nextUrl.pathname.startsWith('/terms') ||
+                       req.nextUrl.pathname.startsWith('/privacy') ||
+                       req.nextUrl.pathname.startsWith('/refund')
 
   if (isPublicPage) return res
 

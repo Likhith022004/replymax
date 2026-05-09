@@ -217,10 +217,12 @@ export default function LandingPage() {
           <span className="text-sm font-bold text-gray-900">ReplyMax</span>
           <div className="flex items-center gap-6">
             <Link href="/pricing" className="text-xs text-gray-400 hover:text-gray-600">Pricing</Link>
+            <Link href="/terms" className="text-xs text-gray-400 hover:text-gray-600">Terms</Link>
+            <Link href="/privacy" className="text-xs text-gray-400 hover:text-gray-600">Privacy</Link>
+            <Link href="/refund" className="text-xs text-gray-400 hover:text-gray-600">Refunds</Link>
             <Link href="/login" className="text-xs text-gray-400 hover:text-gray-600">Login</Link>
-            <Link href="/login" className="text-xs text-gray-400 hover:text-gray-600">Sign up</Link>
           </div>
-          <p className="text-xs text-gray-400">© 2025 ReplyMax</p>
+          <p className="text-xs text-gray-400">© 2026 ReplyMax</p>
         </div>
       </footer>
 
