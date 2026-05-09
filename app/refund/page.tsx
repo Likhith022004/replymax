@@ -7,12 +7,12 @@
       <div className="space-y-8 text-gray-600 text-sm leading-relaxed">
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Our Refund Policy</h2>
-          <p>We offer a 7-day money-back guarantee on all subscription plans. If you are not satisfied with ReplyMax within the first 7 days of your subscription, contact us at replymax001@gmail.com and we will issue a full refund — no questions asked.</p>
+          <p>We offer a 48-hour money-back guarantee on all subscription plans. If you are not satisfied with ReplyMax within the first 48 hours of your subscription, contact us at replymax001@gmail.com and we will issue a full refund — no questions asked.</p>
         </div>
 
         <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-3">After 7 Days</h2>
-          <p>After the 7-day period, subscriptions are non-refundable. You can cancel your subscription at any time and you will retain access until the end of your current billing period.</p>
+          <h2 className="text-lg font-semibold text-gray-900 mb-3">After 48 Hours</h2>
+          <p>After the 48-hour period, subscriptions are non-refundable. You can cancel your subscription at any time and you will retain access until the end of your current billing period.</p>
         </div>
 
         <div>
@@ -22,7 +22,7 @@
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Cancellations</h2>
-          <p>You can cancel your subscription at any time from your account settings. Cancellation stops future charges but does not trigger a refund for the current billing period unless within the 7-day guarantee window.</p>
+          <p>You can cancel your subscription at any time from your account settings. Cancellation stops future charges but does not trigger a refund for the current billing period unless within the 48-hour guarantee window.</p>
         </div>
 
         <div>
