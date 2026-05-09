@@ -1,4 +1,4 @@
-export default function TermsPage() {
+﻿export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Terms of Service</h1>
@@ -47,9 +47,10 @@ export default function TermsPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">9. Contact</h2>
-          <p>For questions about these terms, contact us at support@replymax.in</p>
+          <p>For questions about these terms, contact us at replymax001@gmail.com</p>
         </div>
       </div>
     </div>
   )
 }
+

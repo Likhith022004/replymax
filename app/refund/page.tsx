@@ -1,4 +1,4 @@
-export default function RefundPage() {
+﻿export default function RefundPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Refund Policy</h1>
@@ -7,7 +7,7 @@ export default function RefundPage() {
       <div className="space-y-8 text-gray-600 text-sm leading-relaxed">
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Our Refund Policy</h2>
-          <p>We offer a 7-day money-back guarantee on all subscription plans. If you are not satisfied with ReplyMax within the first 7 days of your subscription, contact us at support@replymax.in and we will issue a full refund — no questions asked.</p>
+          <p>We offer a 7-day money-back guarantee on all subscription plans. If you are not satisfied with ReplyMax within the first 7 days of your subscription, contact us at replymax001@gmail.com and we will issue a full refund — no questions asked.</p>
         </div>
 
         <div>
@@ -17,7 +17,7 @@ export default function RefundPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">How to Request a Refund</h2>
-          <p>Email support@replymax.in with your account email and the reason for your refund request. We process all refund requests within 3-5 business days.</p>
+          <p>Email replymax001@gmail.com with your account email and the reason for your refund request. We process all refund requests within 3-5 business days.</p>
         </div>
 
         <div>
@@ -27,9 +27,10 @@ export default function RefundPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">Contact</h2>
-          <p>For refund requests or questions, email support@replymax.in</p>
+          <p>For refund requests or questions, email replymax001@gmail.com</p>
         </div>
       </div>
     </div>
   )
 }
+

@@ -1,4 +1,4 @@
-export default function PrivacyPage() {
+﻿export default function PrivacyPage() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">Privacy Policy</h1>
@@ -32,14 +32,15 @@ export default function PrivacyPage() {
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">6. Your Rights</h2>
-          <p>You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at support@replymax.in and we will respond within 30 days.</p>
+          <p>You have the right to access, correct, or delete your personal data. To exercise these rights, contact us at replymax001@gmail.com and we will respond within 30 days.</p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-gray-900 mb-3">7. Contact</h2>
-          <p>For privacy questions, contact us at support@replymax.in</p>
+          <p>For privacy questions, contact us at replymax001@gmail.com</p>
         </div>
       </div>
     </div>
   )
 }
+
