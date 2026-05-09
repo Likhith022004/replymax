@@ -23,7 +23,29 @@ export async function GET(req: NextRequest) {
         },
       }
     )
+
     await supabase.auth.exchangeCodeForSession(code)
+
+    const { data: { user } } = await supabase.auth.getUser()
+
+    if (user) {
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('id')
+        .eq('id', user.id)
+        .single()
+
+      if (!profile) {
+        await supabase
+          .from('profiles')
+          .insert({
+            id: user.id,
+            email: user.email,
+            plan: 'free',
+            usage_count: 0
+          })
+      }
+    }
   }
 
   return NextResponse.redirect(new URL('/dashboard', requestUrl.origin))
